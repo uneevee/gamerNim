@@ -3,8 +3,11 @@
     - int startNumber
     - int numberTaken
     - int currentNum
-    - int[] winLoss
+    - static int totalGames
+
     [ ] LogicChecker Subclass
         -blahblahblah
     [ ] Display Subclass
         -Wharever later
+[ ] Player class
+    - int[] winLoss
