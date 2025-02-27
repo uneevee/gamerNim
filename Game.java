@@ -1,7 +1,8 @@
 public class Game {
-    public int number; 
-    public int startingNum;
-    public int lastMove;
+    protected int number; 
+    protected int startingNum;
+    protected int lastMove;
+    
     public void gameLoop(){
         while(true){
             if(number <= 0){
