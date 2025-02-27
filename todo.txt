@@ -1,0 +1,7 @@
+==================CHECK LIST=====================
+[ ] Game Superclass
+    - int startNumber
+    - int numberTaken
+    - int[] winLoss
+    [ ] LogicChecker Subclass
+    [ ] Display Subclass
