@@ -13,7 +13,7 @@ public class Game {
             String nextMove = bigBrother.nextLine();
             System.out.print("The current Nim is "+ number + "What do you want to subtract by?");
             //Placeholder LogicChecker Example
-            LogicChecker.check(0);
+            LogicChecker.check(0);// joshes code
         }
     }
 }
