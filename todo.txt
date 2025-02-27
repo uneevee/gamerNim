@@ -4,4 +4,6 @@
     - int numberTaken
     - int[] winLoss
     [ ] LogicChecker Subclass
+        -blahblahblah
     [ ] Display Subclass
+        -Wharever later
