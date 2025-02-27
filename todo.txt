@@ -2,6 +2,7 @@
 [ ] Game Superclass
     - int startNumber
     - int numberTaken
+    - int currentNum
     - int[] winLoss
     [ ] LogicChecker Subclass
         -blahblahblah
