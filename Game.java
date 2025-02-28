@@ -5,12 +5,12 @@ public class Game {
     protected int lastMove;
     private static int totalGames = 0;
     
-    public Game() {
+    protected Game() {
     	startingNum = 20;
     	number = 20;
     	totalGames += 1;
     }
-    public Game(int players, int start){
+    protected Game(int players, int start){
         startingNum = start;
         number = start;
         totalGames += 1;
