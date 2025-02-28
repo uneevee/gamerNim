@@ -4,7 +4,7 @@ public class Game {
     protected int startingNum;
     protected int lastMove;
     private static int totalGames = 0;
-    private Scanner bigBrother = new Scanner(System.in); // He is always listening
+    
     public Game() {
     	startingNum = 20;
     	number = 20;
