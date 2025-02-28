@@ -4,10 +4,10 @@
     - int numberTaken
     - int currentNum
     - static int totalGames
-
-    [ ] LogicChecker Subclass
-        -blahblahblah
+    [ ] LogicChecker function
     [ ] Display Subclass
-        -Wharever later
+        //Displays in graphics
+    [ ] Text Subclass
+    	//Displays in text
 [ ] Player class
     - int[] winLoss
