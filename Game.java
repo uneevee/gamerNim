@@ -15,22 +15,18 @@ public class Game {
         number = start;
         totalGames += 1;
     }
-    protected void gameLoop(){
+    protected boolean gameLoop(int count){
     	//TODO: Pass input to logicChecker and decide to subtract or rerequest input
     	//Josh's code to handle
-        while(true){
-            if(number <= 0){break;} //break out of main loop if number == 0
-            /*
-            System.out.print("The current Nim is "+ number + "What do you want to subtract by?");
-            String nextMove = bigBrother.nextLine();
             //Placeholder LogicChecker Example
-            if(logicChecker(0)) {
-            	//Fits logic code, subtract.
-            } else {
-            	//Does not fit logic, retry
-            }
-            */
+        while(true){
+            if(logicChecker(count)) {
+            	number -= count;
+                break;
+            } 
         }
+        if(number == 0){return true} else {return false}
+
     }
     
     private static boolean logicChecker(int count) {
