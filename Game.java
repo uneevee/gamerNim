@@ -15,7 +15,7 @@ public class Game {
         number = start;
         totalGames += 1;
     }
-    public void gameLoop(){
+    protected void gameLoop(){
     	//TODO: Pass input to logicChecker and decide to subtract or rerequest input
     	//Josh's code to handle
         while(true){
@@ -33,7 +33,7 @@ public class Game {
         }
     }
     
-    public static boolean logicChecker(int count) {
+    private static boolean logicChecker(int count) {
     	//TODO: add logic to check, Lucas 
     	return true;
     }
