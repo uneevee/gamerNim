@@ -35,7 +35,7 @@ public class Game {
     
     public static boolean logicChecker(int count) {
     	//TODO: add logic to check, Lucas
-        if (count*2 < number && count > 0){
+        if (count*2 < number && count > 0 || number ==1 && count ==1){
             return true;
         }
         else
