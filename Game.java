@@ -34,7 +34,7 @@ public class Game {
     }
     
     public static boolean logicChecker(int count) {
-    	//TODO: add logic to check, Lucas or Allee's?
+    	//TODO: add logic to check, Lucas 
     	return true;
     }
 }
