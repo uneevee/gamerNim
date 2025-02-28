@@ -34,7 +34,14 @@ public class Game {
     }
     
     public static boolean logicChecker(int count) {
-    	//TODO: add logic to check, Lucas 
-    	return true;
+    	//TODO: add logic to check, Lucas
+        if (count*2 < number && count > 0){
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    	
     }
 }
