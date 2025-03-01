@@ -7,8 +7,4 @@ public class Text extends Game{
 		gameLoop(input.toInt());
 		return endGame(); //if true, play again.
 	}
-	//Suda
-	private boolean endGame(){
-		//TODO: End the game, change winLoss for each player, ask to play again
-	}
 }

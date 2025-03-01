@@ -40,4 +40,9 @@ public class Game {
         }
     	
     }
+
+    //Suda
+	protected boolean endGame(){
+		//TODO: End the game, change winLoss for each player, ask to play again
+	}
 }
