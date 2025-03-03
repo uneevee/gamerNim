@@ -48,9 +48,9 @@ public class Game {
 		//TODO: End the game, change winLoss for each player, ask to play again
         for(Player player : players){
             if(player == currentPlayer){
-                player.addWin();
-            } else {
                 player.addLoss();
+            } else {
+                player.addWin();
             }
         }
 	}
