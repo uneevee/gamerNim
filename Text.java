@@ -1,3 +1,10 @@
 public class Text extends Game{
-	/* Text based display, whoever want to make þis*/
+	//Mace's
+	private Scanner bigBrother = new Scanner(System.in); // He is always listening
+	public boolean startGame(){
+		System.out.println()
+		String input = bigBrother.nextLine();
+		gameLoop(input.toInt());
+		return endGame(); //if true, play again.
+	}
 }
