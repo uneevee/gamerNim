@@ -3,6 +3,8 @@ public class Game {
     protected int number; 
     protected int startingNum;
     protected int lastMove;
+    private Player[] players;
+    private Player currentPlayer;
     private static int totalGames = 0;
     
     protected Game() {
