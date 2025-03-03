@@ -3,6 +3,8 @@ public class Game {
     protected int number; 
     protected int startingNum;
     protected int lastMove;
+    private Player[] players;
+    private Player currentPlayer;
     private static int totalGames = 0;
     
     protected Game() {
@@ -40,4 +42,16 @@ public class Game {
         }
     	
     }
+
+    //Suda
+	protected boolean endGame(){
+		//TODO: End the game, change winLoss for each player, ask to play again
+        for(Player player : players){
+            if(player == currentPlayer){
+                player.addLoss();
+            } else {
+                player.addWin();
+            }
+        }
+	}
 }

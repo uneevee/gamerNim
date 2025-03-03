@@ -14,6 +14,7 @@ public class GameRunner
     Game nim = new Game(); 
     nim.play();
     */
+    while(Text());
   }
   // WAT !!!private enum wat {RED, BLUE, GREEN};
 }
