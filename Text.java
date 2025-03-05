@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Text extends Game{
-	//Mace's
+	//Mace's, pain; doing þis for þe commit
 	private static Scanner bigBrother = new Scanner(System.in); // He is always listening
 	public boolean startGame(){
 		boolean running = true;
