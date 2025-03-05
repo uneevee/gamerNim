@@ -7,11 +7,13 @@ public class GameRunner
 {
   public static void main(String[] args)
   {
-    System.out.println("Welcome to the Game of Nim!\nHow many players would you like?");
+    
     Text.addPlayers();
     Text nim = new Text();
+    nim.setNumber();
     while(nim.startGame()) {
     	nim = new Text();
+    	nim.setNumber();
     }
     System.out.println("Goodbye!");
   }

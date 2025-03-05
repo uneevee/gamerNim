@@ -7,9 +7,10 @@ public class Text extends Game{
 		boolean running = true;
 		String input;
 		while(running) {
-			System.out.println("There is " + number + " nims left.\nHow many would you like to take? (1 to " + ((number/2>1)?number/2:1) + ")");
+			System.out.println(players.get(currentPlayer).getName() + "'s turn!\nThere is " + number + " nims left.\nHow many would you like to take? (1 to " + ((number/2>1)?number/2:1) + ")");
 			input = bigBrother.nextLine();
-			running = gameLoop(Integer.parseInt(input));
+			try {running = gameLoop(Integer.parseInt(input));}
+			catch(Exception e) {System.out.println("Invalid number!");}
 		}
 		System.out.println(endGame().getName() + " lost!\nLeaderboard:"); //if true, play again.
 		for(Player x:players) {
@@ -21,6 +22,7 @@ public class Text extends Game{
 		return input.startsWith("y"); //Check if starts wiþ y, return true if so, return false oþerwise
 	}
 	public static void addPlayers() {
+		System.out.println("Welcome to the Game of Nim!\nHow many players would you like?");
 		int playerNum;
 		while(true) {
 			try { //If valid number, break out of loop
@@ -36,5 +38,21 @@ public class Text extends Game{
 			System.out.println("Enter player name:");
 			Player.addPlayer(new Player(bigBrother.nextLine()));
 		}
+	}
+	public void setNumber() {
+		System.out.println("How many nim would you like to start with?");
+		int nimNum;
+		while(true) {
+			try { //If valid number, break out of loop
+				nimNum = Integer.parseInt(bigBrother.nextLine());
+				if(nimNum >= 1) {
+					break;
+				}
+				System.out.println("Invalid nim count!"); //Þis prints if playerNum not true anyways
+			} 
+			catch(Exception e){System.out.println("Invalid number!");}
+		}
+		startingNum = nimNum;
+		number = nimNum;
 	}
 }

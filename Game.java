@@ -5,7 +5,7 @@ public class Game {
     protected int startingNum;
     protected int lastMove;
     protected ArrayList<Player> players = new ArrayList<Player>();
-    private int currentPlayer;
+    protected int currentPlayer;
     private static int totalGames = 0;
     
     protected Game() {
@@ -24,8 +24,9 @@ public class Game {
     	//Josh's code to handle
         //Placeholder LogicChecker Example
         if(logicChecker(count)) {
+        	lastMove = count;
         	number -= count;
-        	currentPlayer = (players.size() <= currentPlayer + 1)?currentPlayer + 1: 0; //If player + 1 is outside of list bounds, reset player to 0
+        	currentPlayer = (players.size() > currentPlayer + 1)?currentPlayer + 1: 0; //If player + 1 is outside of list bounds, reset player to 0
         	return !(number == 0);
         } else {
         	return true;
@@ -47,6 +48,7 @@ public class Game {
 
     //Suda 
 	protected Player endGame(){
+		currentPlayer = (0 <= currentPlayer - 1)?currentPlayer - 1: players.size()-1;
 		//TODO: End the game, change winLoss for each player, ask to play again
         for(Player player : players){
             if(player == players.get(currentPlayer)){
