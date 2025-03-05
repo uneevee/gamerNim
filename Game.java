@@ -29,6 +29,7 @@ public class Game {
         	currentPlayer = (players.size() > currentPlayer + 1)?currentPlayer + 1: 0; //If player + 1 is outside of list bounds, reset player to 0
         	return !(number == 0);
         } else {
+        	System.out.println("Invalid number!");
         	return true;
         }
 
