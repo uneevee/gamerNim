@@ -21,8 +21,8 @@ public class Player {
     public static void addPlayer(Player x) {
     	playerList.add(x);
     }
-    public static Player[] getPlayers() {
-    	return (Player[])playerList.toArray();
+    public static ArrayList<Player> getPlayers() {
+    	return playerList;
     }
 }
 
