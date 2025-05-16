@@ -55,4 +55,8 @@ public class Text extends Game{
 		startingNum = nimNum;
 		number = nimNum;
 	}
+	protected boolean gameLoop(int count){
+		System.out.println("ByeByeWorld");
+		return false;
+	}
 }
